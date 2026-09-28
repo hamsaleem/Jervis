@@ -1,0 +1,26 @@
+{
+  "$schema": "https://jervis.local/schemas/config-v1.json",
+  "schema_version": 1,
+  "storage_root": "%LOCALAPPDATA%\\Jervis",
+  "model": {
+    "provider": "ollama",
+    "endpoint": "http://127.0.0.1:11434",
+    "chat_model": "qwen3.5:4b",
+    "cloud_fallback": "disabled"
+  },
+  "integrations": {
+    "tv": {
+      "enabled": false,
+      "bridge_url": "http://127.0.0.1:38473"
+    },
+    "email": {
+      "enabled": false,
+      "sync_interval_minutes": 15,
+      "send_requires_explicit_approval": true
+    }
+  },
+  "resource_limits": {
+    "background_model_warmup": false,
+    "email_sync_concurrency": 1
+  }
+}
