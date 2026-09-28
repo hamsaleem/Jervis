@@ -2,6 +2,14 @@
 
 Jervis is a local-first personal AI assistant for Windows. It is being built in small, approval-gated phases from the upstream [isair/jarvis](https://github.com/isair/jarvis) project, beginning with TCL Android TV control and multi-account email management.
 
+## Attribution and license
+
+Jervis is an independent integration project designed around [isair/jarvis](https://github.com/isair/jarvis), copyright (c) 2025 Baris Sencan. The original Jarvis source is not included in this repository. The separately downloaded upstream checkout is excluded from Git. When distributing adapted upstream code, preserve the original copyright notice and apply the upstream non-commercial license in [LICENSE](LICENSE). Commercial use of upstream-derived software requires permission from its copyright holder.
+
+## Project status
+
+This is an early-stage planning and integration repository, not a working Jarvis replacement. The upstream Jarvis runtime, TV bridge, email integration and Qwen model are **not** bundled here. To try the original assistant, visit the upstream repository. The TCL TV remote is maintained separately at [hamsaleem/TCL-TV-Remote](https://github.com/hamsaleem/TCL-TV-Remote).
+
 ## Current phase
 
 Phase 1 is complete: repository inspection, Windows compatibility assessment, security boundary design, and a project-layout validation check. No application runtime, AI model, TV credential, email account, or cloud AI service has been installed or configured.

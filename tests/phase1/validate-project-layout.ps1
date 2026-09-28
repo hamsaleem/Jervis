@@ -7,6 +7,7 @@ Set-StrictMode -Version Latest
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $requiredFiles = @(
     'README.md',
+    'LICENSE',
     '.gitignore',
     'config\jervis.example.json',
     'docs\phase-1-assessment.md',
@@ -35,7 +36,7 @@ if ($exampleConfig.model.cloud_fallback -ne 'disabled') {
 $forbiddenNames = @('credentials.json', '.env', 'jervis.local.json')
 $forbiddenFiles = Get-ChildItem -LiteralPath $projectRoot -Recurse -Force -File |
     Where-Object {
-        $_.FullName -notmatch '[\\/]\.git[\\/]' -and $_.Name -in $forbiddenNames
+        $_.FullName -notmatch '[\\/]\.git[\\/]' -and $_.FullName -notmatch '[\\/]upstream[\\/]' -and $_.Name -in $forbiddenNames
     }
 
 if ($forbiddenFiles) {

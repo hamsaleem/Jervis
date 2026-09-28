@@ -1,4 +1,4 @@
-# Phase 1 — upstream assessment
+# Phase 1 â€” upstream assessment
 
 Status: complete on 2026-09-28. This document records inspection findings only; it does not claim that the upstream runtime or a TV connection has been run on this computer.
 
@@ -36,7 +36,7 @@ The project can be made reliable on Windows, but Windows is not upstream's prima
 
 ## License boundary
 
-Upstream Jarvis is licensed for non-commercial use and requires derivatives to retain the same license. Jervis is planned as a personal local assistant. No commercial distribution or public repository will be created from this work without obtaining the appropriate license and explicit approval.
+Upstream Jarvis is licensed for non-commercial use and requires derivatives to retain the same license. Jervis is planned as a personal local assistant. Public non-commercial publication is permitted subject to retention of the upstream copyright notice and license terms for any upstream-derived code. Commercial use of upstream-derived software requires a separate license. The upstream source checkout and release binaries are not included in this repository.
 
 ## TCL Android TV Remote assessment
 
@@ -61,7 +61,7 @@ The current bridge already covers power-key, volume, mute, navigation, Home, Bac
 ## Phase 1 exit criteria
 
 - [x] Project directory selected and write permission verified.
-- [x] Local Git repository initialized; no remote or publication configured.
+- [x] Local Git repository initialized and pushed to a private GitHub remote; publication review is pending.
 - [x] Upstream architecture, license, Windows requirements, and macOS-specific code assessed.
 - [x] GPU identified and model candidate selected subject to runtime testing.
 - [x] Existing TV protocol and missing capabilities identified.
