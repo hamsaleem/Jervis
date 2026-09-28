@@ -32,3 +32,6 @@ Thumbs.db
 Desktop.ini
 .vs/
 .vscode/
+
+# External upstream checkout and downloaded release bundles
+/upstream/
